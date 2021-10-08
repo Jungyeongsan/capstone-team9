@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>B-Race</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="container-fluid ">
+      <a class="logo-btn me-4"
+        href="#"><span>B</span><span>-</span><span>R</span><span>a</span><span>c</span><span>e</span></a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <button type="button" class="btn btn-danger me-4">게임 시작</button>
+
+          <a href="#login" class="btn btn-outline-danger me-4 ">로그인</a>
+
+
+          <a href="#member" class="btn btn-outline-danger me-4">회원가입</a>
+
+
+
+          <div class="dropdown me-4">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              마이페이지
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#password">비밀번호 변경</a></li>
+              <li><a class="dropdown-item" href="#change-name">닉네임 변경</a></li>
+              <li><a class="dropdown-item" href="#">내 랭킹 확인</a></li>
+            </ul>
+          </div>
+          <script src="jys.js"></script>
+          <button type="button" class="btn btn-outline-secondary me-4">맵 제작</button>
+          <button type="button" class="btn btn-outline-secondary me-4">전체 랭킹 </button>
+        </ul>
+        <form class="d-flex">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="맵 이름" name="search-map">
+            <input type="submit" value="검색">
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </nav>
+  <div class="intro_bg"></div>
+
+  <p class="text-center fs-1 mt-5"><span>B</span><span>-</span><span>R</span><span>a</span><span>c</span><span>e</span>
+  
+  <div class="popup-login" id="login">
+    <a href="#">
+      <button type="button" class="btn-outline-secondary text-end">
+        닫기
+      </button>
+    </a>
+    <p class="text-center fs-1"><span>B</span><span>-</span><span>R</span><span>a</span><span>c</span><span>e</span>
+    </p>
+
+    <form class="row g-3">
+      <div class="col-12">
+        <label for="inputAddress" class="form-label ">이메일</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="이메일을 입력해주세요">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">비밀번호</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="비밀번호를 입력해 주세요">
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary fs-5">로그인</button>
+      </div>
+    </form>
+  </div>
+  <div class="dim">
+  </div>
+
+  <div class="popup-member" id="member">
+    <a href="#">
+      <button type="button" class="btn-outline-secondary text-end">
+        닫기
+      </button>
+    </a>
+    <p class="text-center fs-1"><span>B</span><span>-</span><span>R</span><span>a</span><span>c</span><span>e</span>
+    </p>
+
+    <form class="row g-3">
+      <div class="col-md-6 ">
+        <label for="inputEmail4" class="form-label">이메일</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="이메일을 입력해주세요">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">비밀번호</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="비밀번호를 입력해주세요">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">닉네임</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="닉네임을 입력해주세요">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">전화번호</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="번호를 입력해 주세요">
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary fs-6">회원가입</button>
+      </div>
+    </form>
+  </div>
+  <div class="dim">
+  </div>
+
+  <div class="popup-password" id="password">
+    <a href="#">
+      <button type="button" class="btn-outline-secondary text-end">
+        닫기
+      </button>
+    </a>
+    <p class="text-center fs-1"><span>B</span><span>-</span><span>R</span><span>a</span><span>c</span><span>e</span>
+    </p>
+    <form class="row g-3">
+
+      <div class="col-12">
+        <label for="inputAddress" class="form-label ">기존 비밀번호</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="기존 비밀번호를 입력해주세요">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">바꿀 비밀번호</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="바꿀 비밀번호를 입력해 주세요">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">다시 입력</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="바꿀 비밀번호를 입력해 주세요">
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary fs-5">완료</button>
+      </div>
+    </form>
+  </div>
+  <div class="dim">
+  </div>
+
+  <div class="popup-change-name" id="change-name">
+    <a href="#">
+      <button type="button" class="btn-outline-secondary text-end">
+        닫기
+      </button>
+    </a>
+    <p class="text-center fs-1"><span>B</span><span>-</span><span>R</span><span>a</span><span>c</span><span>e</span>
+    </p>
+
+    <form class="row g-3">
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">기존 닉네임</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="기존 닉네임을 입력해 주세요">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label ">바꿀 닉네임</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="바꿀 닉네임을 입력해주세요">
+      </div>
+
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary fs-5">완료</button>
+      </div>
+    </form>
+  </div>
+  <div class="dim">
+  </div>
+
+
+  <!-- <div class="container mt-5">
+
+    <div class="row">
+      <div class="col">
+        <div class="card mt-5" style="width: 15rem;">
+          <img src="1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">//맵 이름</h5>
+            <p class="card-text">//맵 설명 </p>
+            <a href="#" class="btn btn-primary">바로가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mt-5" style="width: 15rem;">
+          <img src="1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">//맵 이름</h5>
+            <p class="card-text">//맵 설명 </p>
+            <a href="#" class="btn btn-primary">바로가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mt-5" style="width: 15rem;">
+          <img src="1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">//맵 이름</h5>
+            <p class="card-text">//맵 설명 </p>
+            <a href="#" class="btn btn-primary">바로가기</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div> -->
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+    integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
